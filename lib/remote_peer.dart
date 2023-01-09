@@ -6,7 +6,6 @@ import 'package:pointycastle/api.dart';
 import 'package:pointycastle/asymmetric/api.dart';
 
 import 'aes.dart';
-import 'network.dart';
 import 'nonces.dart';
 import 'packer.dart';
 import 'peer.dart';
