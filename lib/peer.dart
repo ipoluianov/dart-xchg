@@ -4,13 +4,13 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
-import 'package:gazer_client/xchg/network.dart';
-import 'package:gazer_client/xchg/remote_peer.dart';
-import 'package:gazer_client/xchg/request_udp.dart';
 import 'package:pointycastle/api.dart';
 import 'package:pointycastle/asymmetric/api.dart';
 
+import 'network.dart';
 import 'network_container.dart';
+import 'remote_peer.dart';
+import 'request_udp.dart';
 import 'rsa.dart';
 import 'session.dart';
 import 'transaction.dart';

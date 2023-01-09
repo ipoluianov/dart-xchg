@@ -1,7 +1,8 @@
 import 'dart:typed_data';
 import 'package:base32/base32.dart';
-import 'package:gazer_client/xchg/udp_address.dart';
-import 'package:gazer_client/xchg/utils.dart';
+
+import 'udp_address.dart';
+import 'utils.dart';
 
 class Transaction {
   int frameType = 0; // offset: 8

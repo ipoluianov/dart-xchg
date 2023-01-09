@@ -1,12 +1,10 @@
-import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:gazer_client/xchg/peer.dart';
-import 'package:gazer_client/xchg/udp_address.dart';
-
-import 'package:http/http.dart' as http;
 import 'package:base32/base32.dart';
+
+import 'peer.dart';
+import 'udp_address.dart';
 
 Future<void> sendFrame(
     UdpAddress? address, List<Uint8List> frames, Peer peer) async {

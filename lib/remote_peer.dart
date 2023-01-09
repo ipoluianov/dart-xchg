@@ -2,16 +2,16 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:gazer_client/xchg/request_udp.dart';
-import 'package:gazer_client/xchg/rsa.dart';
-import 'package:gazer_client/xchg/aes.dart';
-import 'package:gazer_client/xchg/packer.dart';
 import 'package:pointycastle/api.dart';
 import 'package:pointycastle/asymmetric/api.dart';
 
+import 'aes.dart';
 import 'network.dart';
 import 'nonces.dart';
+import 'packer.dart';
 import 'peer.dart';
+import 'request_udp.dart';
+import 'rsa.dart';
 import 'transaction.dart';
 import 'udp_address.dart';
 import 'utils.dart';
@@ -114,13 +114,13 @@ class RemotePeer {
   void send0x20(UdpAddress udpAddress) {
     return;
 
-    var nonce = nonces.next();
+    /*var nonce = nonces.next();
     var addressBS = utf8.encode(remoteAddress);
     var request = Uint8List(8 + 16 + addressBS.length);
     request[0] = 0x20;
     copyBytes(request, 8, nonce);
     copyBytes(request, 8 + 16, Uint8List.fromList(addressBS));
-    sendFrame(udpAddress, [request], peer);
+    sendFrame(udpAddress, [request], peer);*/
   }
 
   Future<void> checkInternetConnectionPoint() async {
